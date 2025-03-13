@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Attack Type</title>
+</head>
+<body>
+    <h1>Predict Attack Type</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="ID" placeholder="ID">
+        <input type="text" name="Sender_IP" placeholder="Sender IP">
+        <input type="text" name="Sender_Port" placeholder="Sender Port">
+        <input type="text" name="Target_IP" placeholder="Target IP">
+        <input type="text" name="Target_Port" placeholder="Target Port">
+        <input type="text" name="Transport_Protocol" placeholder="Transport Protocol">
+        <input type="text" name="Duration" placeholder="Duration">
+        <input type="text" name="AvgDuration" placeholder="Avg Duration">
+        <input type="text" name="PBS" placeholder="PBS">
+        <input type="text" name="AvgPBS" placeholder="Avg PBS">
+        <input type="text" name="TBS" placeholder="TBS">
+        <input type="text" name="PBR" placeholder="PBR">
+        <input type="text" name="AvgPBR" placeholder="Avg PBR">
+        <input type="text" name="TBR" placeholder="TBR">
+        <input type="text" name="Missed_Bytes" placeholder="Missed Bytes">
+        <input type="text" name="Packets_Sent" placeholder="Packets Sent">
+        <input type="text" name="Packets_Received" placeholder="Packets Received">
+        <input type="text" name="SRPR" placeholder="SRPR">
+        <button type="submit">Predict</button>
+    </form>
+    {% if objs %}
+        <h2>Prediction: {{ objs }}</h2>
+    {% endif %}
+</body>
+</html>

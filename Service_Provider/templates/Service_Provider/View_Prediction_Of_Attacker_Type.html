@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Predictions</title>
+</head>
+<body>
+    <h1>View Predictions</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Sender IP</th>
+            <th>Sender Port</th>
+            <th>Target IP</th>
+            <th>Target Port</th>
+            <th>Prediction</th>
+        </tr>
+        {% for prediction in list_objects %}
+        <tr>
+            <td>{{ prediction.ID1 }}</td>
+            <td>{{ prediction.Sender_IP }}</td>
+            <td>{{ prediction.Sender_Port }}</td>
+            <td>{{ prediction.Target_IP }}</td>
+            <td>{{ prediction.Target_Port }}</td>
+            <td>{{ prediction.Prediction }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
