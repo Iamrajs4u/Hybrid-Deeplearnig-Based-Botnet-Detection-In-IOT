@@ -1,0 +1,39 @@
+A Hybrid Deep Learning Approach for Bottleneck Detection in IoT
+
+
+IEEE Transaction on Deep Learning,Volume:10,Issue Date:20.July.2022
+
+Fog security, software dened networks, deep learning, Internet of Things, botnet, intrusion
+detection.
+
+
+A_Hybrid_Deep_Learning_Approach
+
+
+a_hybrid_deep_learning_approach
+
+
+bottleneck_detection
+
+ID
+Sender_IP
+Sender_Port
+Target_IP
+Target_Port
+Transport_Protocol
+Duration
+AvgDuration
+PBS
+AvgPBS
+TBS
+PBR
+AvgPBR
+TBR
+Missed_Bytes
+Packets_Sent
+Packets_Received
+SRPR
+Prediction
+
+
+DEEP NEURAL NETWORK (DNN)
